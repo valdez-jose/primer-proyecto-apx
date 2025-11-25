@@ -1,0 +1,88 @@
+
+/* === FOOTER === */
+footer {
+  background-color: rgb(1, 10, 10);
+  padding: 2rem 1rem; /* elimina altura fija */
+  color: white;
+}
+
+/* Contenedor principal */
+.contenedor-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Perfil (logo + texto) */
+.perfil-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 80%;
+  object-fit: cover;
+}
+
+.perfil-nav p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Redes sociales */
+.contenedor-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-nav > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contenedor-nav li img {
+  width: 30px;
+  height: 30px;
+  border-radius: 70%;
+}
+
+.nav-titulo {
+  color: white;
+  margin-bottom: 0.4rem;
+}
+
+/* COPYRIGHT */
+footer > p {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+
+
+/* 📱 === MÓVIL === */
+@media (max-width: 768px) {
+
+  .contenedor-footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .perfil-nav {
+    margin: 0; /* quitamos margenes grandes */
+  }
+
+  .contenedor-nav {
+    margin: 0;
+  }
+}
