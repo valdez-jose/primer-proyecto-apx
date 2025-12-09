@@ -1,0 +1,85 @@
+
+/*SECCIÓN  */
+.contenedor__servicios{
+    padding: 60px 20px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: darkgrey;
+}
+
+.titulo-servicios{
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+}
+
+/*CONTENEDOR DE CARDS */
+.contenedor-cards{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2.5rem;
+    flex-wrap: wrap; 
+}
+
+/*CARD*/
+.card{
+    background-color: rgba(40, 4, 172, 0.76);
+    color: white;
+    width: 310px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    transition: transform .2s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+/*IMAGEN*/
+.img-card{
+    width: 110px;
+    height: auto;
+}
+
+/*TEXTO  */
+.card h4{
+    font-size: 1.35rem;
+    margin: 20px 0 12px;
+}
+
+.card p{
+    font-size: 0.95rem;
+    line-height: 1.4;
+    max-width: 260px;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 768px){
+    .titulo-servicios{
+        font-size: 2.2rem;
+    }
+
+    .contenedor-cards{
+        gap: 1.5rem;
+    }
+
+    .card{
+        width: 85%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px){
+    .titulo-servicios{
+        font-size: 1.9rem;
+    }
+
+    .card{
+        width: 95%;
+    }
+}

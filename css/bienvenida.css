@@ -1,0 +1,82 @@
+
+/* CONTENEDOR GENERAL*/
+.contenedor-bienvenida{
+    background-color: rgba(5, 7, 6, 0.068);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* ==== TEXTO ==== */
+.titulo{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo h2{
+    color:white;
+    margin-left: 8rem;
+     font-size: 2.8rem;
+}
+
+/* FOTO */
+.foto-jose{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    padding-left: 15rem;
+    height: 500px;
+}
+
+.jose{
+    width: 70%;
+    max-width: 400px;
+    border-radius: 10px; 
+}
+
+
+/*RESPONSIVE PARA TABLET Y MÓVIL*/
+@media (max-width: 768px){
+    .contenedor-bienvenida{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .titulo{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .titulo h2{
+        margin-left: 0;
+        font-size: 1.8rem;
+    }
+
+    .foto-jose{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .jose{
+        width: 60%;
+    }
+}
+
+/*RESPONSIVE MÓVIL PEQUEÑO*/
+@media (max-width: 480px){
+    .titulo h2{
+        font-size: 1.5rem;
+    }
+
+    .jose{
+        width: 75%;
+    }
+}

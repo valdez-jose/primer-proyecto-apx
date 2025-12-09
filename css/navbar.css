@@ -1,0 +1,86 @@
+
+/* RESET OPCIONAL */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CONTENEDOR DEL HEADER */
+.top-header{
+  width: 100%;
+  background-color: #0e010196;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+}
+
+/* LOGO + TEXTO */
+.perfil{
+   width: 90px;
+  height:auto;
+}
+
+.logo1{
+  width: 90px;
+  height: 90px;
+  border-radius: 20%;
+}
+
+/* NAV NORMAL (PC) */
+nav ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+}
+
+/* BOTÓN HAMBURGUESA (solo visible en móvil) */
+.hamburguesa{
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  display: none;
+}
+
+/*********** RESPONSIVE ***********/
+@media (max-width: 768px){
+
+  /* MOSTRAR HAMBURGUESA EN MÓVIL */
+  .hamburguesa{
+    display: block;
+  }
+
+  /* OCULTAR MENU POR DEFECTO EN MÓVIL */
+  #menuNav{
+    display: none;
+    position: absolute;
+    top: 70px; /* debajo del header */
+    right: 0;
+    background-color: #fafafa;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  #menuNav ul{
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* CLASE PARA MOSTRAR EL MENÚ */
+  #menuNav.active{
+    display: block;
+  }
+}
+
+
+   

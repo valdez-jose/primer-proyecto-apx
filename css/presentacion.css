@@ -1,0 +1,87 @@
+/* === CONTENEDOR === */
+.contenedor__presentacion{
+    background-color: rgba(71, 61, 139, 0.007);
+    width: 100%;
+    height: 538px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 40px;
+    flex-wrap: wrap; /* permite caer en móvil */
+}
+
+/* === LOGO === */
+.logo-aprobacion{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo3{
+    width: 180px;
+    max-width: 100%;
+}
+
+/* === TEXTO === */
+.presentacion-contenido{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-presentacion{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.parrafo-presentacion{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/*RESPONSIVE MÓVIl */
+@media (max-width: 768px){
+
+    .contenedor__presentacion{
+        flex-direction: column;  
+        text-align: center; 
+        gap: 20px;
+    }
+
+    .presentacion-contenido{
+        order: 1;     /* texto primero */
+        align-items: center;
+    }
+
+    .logo-aprobacion{
+        order: 2;     /* logo abajo */
+    }
+
+    .titulo-presentacion{
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    .parrafo-presentacion{
+        font-size: 1.1rem;
+        width: 90%;
+    }
+
+    .logo3{
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px){
+    .titulo-presentacion{
+        font-size: 1.7rem;
+    }
+
+    .parrafo-presentacion{
+        font-size: 1rem;
+    }
+}

@@ -4,144 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/formulario.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <title>Proyecto final-2</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/bienvenida.css">
+    <link rel="stylesheet" href="css/presentacion.css">
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Desafio-apx</title>
 </head>
 <body>
+    <header class="header">
 
-  <header>
-  <div class="top-header">
+    <div class="top-header">
 
-    
-    <div class="perfil">
-      <img class="logo1" src="./imagen/compu2.png" alt="Foto de perfil de Jose">
-      <p>Soy Jose</p>
-    </div>
-
+  <div class="perfil">
+    <img class="logo1" src="images/logo2-jose.png" alt="Foto de perfil de Jose">
+  </div>
   
-    <button class="hamburguesa" id="btnHamburguesa">
-      ☰
-    </button>
+  <button class="hamburguesa" id="btnHamburguesa">☰</button>
 
+  <nav id="menuNav">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
 
-    <nav id="menuNav">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-
-  </div>
-
-  
-  <div class="bienvenida">
-    <h4>Bienvenido a mi sitio</h4>
-    <img class="foto-jose" src="./imagen/imagen2.png" alt="Foto de Jose">
-  </div>
-</header>
-
-
-
-<main>
-  <section class="presentacion">
-    <div class="logo-aprobacion">
-      <img src="./imagen/logo-aprobacion.jfif" alt="Logo de aprobación" />
-    </div>
-
-  <div class="info">
-    <h3 class="info-titulo">Soy José</h3>
-    <p class="info-parrafo">
-      Desarrollador web apasionado por el aprendizaje constante. Me gusta crear
-      proyectos funcionales y bien estructurados.<br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatem sit minus 
-      a suscipit saepe libero laborum explicabo, possimus, asperiores unde. Officia illum 
-      fugiat officiis molestias vel enim rem hic, cumque voluptatem mollitia distinctio 
-      blanditiis provident voluptas consequuntur cum earum.
-    </p>
-  </div>
-</section>
-
-
-  <!-- artículos -->
-<section id="proyectos" class="proyectos">
-    <h2>Mis proyectos</h2>
-
-    <div class="cards">
-
-      <article>
-        <img src="./imagen/imagen1.jpg" alt="Proyecto 1">
-        <h4>Título del proyecto 1</h4>
-        <p>Algo interesante sobre mi Lorem ipsum dolor sit amet, 
-          consectetur adipiscing elit. 
-          Nulla dui quam, 
-          sollicitudin at enim id, sodales vehicula velit. 
-          Aenean lobortis posuere tristique.</p>
-      </article>
-
-      <article>
-        <img src="./imagen/imagen1.jpg" alt="Proyecto 2">
-        <h4>Título del proyecto 2</h4>
-        <p>Algo interesante sobre mi Lorem ipsum dolor sit amet, 
-          consectetur adipiscing elit.
-          Nulla dui quam, sollicitudin at enim id, 
-          sodales vehicula velit. Aenean lobortis posuere tristique.</p>
-      </article>
-
-      <article>
-        <img src="./imagen/imagen1.jpg" alt="Proyecto 3">
-        <h4>Título del proyecto 3</h4>
-        <p>Algo interesante sobre mi Lorem ipsum dolor sit amet,
-           consectetur adipiscing elit.
-           Nulla dui quam, sollicitudin at enim id, sodales 
-           vehicula velit. Aenean lobortis posuere tristique.</p>
-      </article>
-    </div>
-
-</section>
-
-  <!-- formulario -->
-
-<div class="form-wrapper">
-  <form class="formulario">
-    <h2 class="titulo">Escribeme</h2>
-
-    <input type="text" placeholder="Nombre">
-    <input type="text" placeholder="Apellido">
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Contraseña">
-
-    <button type="submit">Enviar</button>
-  </form>
 </div>
+        
+        <div class="contenedor-bienvenida">
+            <div class="titulo">
+                    <h2>Bienvenidos a mi sitio</h2>
+            </div>
+
+            <div class="foto-jose">
+                <img class="jose" src="images/foto-jose.png" alt="foto de José">
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+      <section class="contenedor__presentacion">
+
+    <div class="logo-aprobacion">
+        <img class="logo3" src="images/aprobacion.png" alt="logo">
+    </div>
+
+    <div class="presentacion-contenido">
+        <h4 class="titulo-presentacion">Soy José</h4>
+        <p class="parrafo-presentacion">
+          Soy desarrollador Full Stack enfocado en crear aplicaciones web completas, 
+          desde interfaces intuitivas hasta lógica backend robusta. Trabajo principalmente 
+          con JavaScript, React y Node.js, 
+          integrando APIs, bases de datos y diseño adaptable para brindar 
+          soluciones útiles y eficientes.
+         </p>
+    </div>
+
+</section>
+
+
+        <section class="contenedor__servicios">
+    <h3 class="titulo-servicios">Mis Servicios</h3>
+
+    <div class="contenedor-cards">
+        <div class="card">
+            <img class="img-card" src="images/desktop.png" alt="">
+            <h4>Software Developer</h4>
+            <p>Como desarrollador de software, creo soluciones eficientes que conectan diseño, 
+               lógica y experiencia de usuario. Mi objetivo es construir productos que realmente
+                aporten valor a las personas.</p>
+        </div>
+
+        <div class="card">
+            <img class="img-card" src="images/desktop.png" alt="">
+            <h4>Backend con Javascript</h4>
+            <p>Me enfoco en construir experiencias dinámicas para la web con JavaScript, 
+                desde interfaces interactivas con React hasta el manejo de lógica compleja
+                 del lado del servidor con Node.js.</p>
+        </div>
+
+        <div class="card">
+            <img class="img-card" src="images/desktop.png" alt="">
+            <h4>Backend con Python</h4>
+            <p>Me especializo en desarrollar APIs y servicios backend usando Python. 
+            Trabajo con frameworks como Django y Flask para crear aplicaciones seguras,
+             escalables y fáciles de mantener.</p>
+        </div>
+    </div>
+</section>
+
+    <section class="form">
+    <h1 class="titulo-form">Escribime</h1>
+
+    <form class="contenedor-form">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" placeholder="Tu nombre">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="tucorreo@gmail.com">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" placeholder="Escribí tu mensaje"></textarea>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+</section>
 
 </main>
+    
+    <footer class="footer">
+        <div class="footerlogosince"> 
 
-<footer>
-   <div class="contenedor-footer">
+            <img class="iconoFinal" src="images/logo2-jose.png" alt="">
+            <p class="since">© 2026 José</p>
+        </div>
 
-    <div class="perfil-nav">
-      <img class="logo1" src="./imagen/compu2.png" alt="Foto de perfil de Jose">
-      <p>Soy Jose</p>
-    </div>
-
-    <nav class="contenedor-nav">
-      <ul>
-    <h4 class="nav-titulo">Seguinos</h4>
-          <li><img src="https://img.freepik.com/vector-premium/logotipo-redondo-facebook-aislado-sobre-fondo-blanco_469489-897.jpg?semt=ais_incoming&w=740&q=80" alt="Facebook"></li>
-          <li><img src="https://img.freepik.com/psd-premium/logo-instagram_971166-164497.jpg?semt=ais_hybrid&w=740&q=80" alt="Instagram"></li>
-          <li><img src="https://i.pinimg.com/736x/51/e7/2c/51e72cc84ff8d661d3e27a2bea2fdb9c.jpg" alt="TikTok"></li>
-      </ul>
-    </nav>
-  </div>
-
-  <p>© Copyright Pincharrata el mejor</p>
-
-</footer>
-
-<script src="header.js" ></script>
+        <div class="redessociales">
+            <div class="instagram1">
+                <img class="Instagram" src="images/instagram.png" alt="instagram" >Instagram
+            </div>
+            <div class="Linkedin1">        
+                <img class="Linkedin" src="images/linkedin.png" alt="Linkedin">Linkedin
+            </div>
+            <div class="GitHub1"> 
+                <img class="GitHub" src="images/github.png" alt="gitHub">GitHub
+            </div>
+   </div>
+    </footer>
+    <script src="script.js" ></script>
 </body>
 </html>
